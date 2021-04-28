@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/imagelightbox.min.css">
+
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <title>idev - Consulting HTML Template</title>
+ <!-- <style>
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+.modal {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(51, 51, 51, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+.modal-container {
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 0.3s;
+  background: #fff;
+  transform: translateY(100px) scale(0.4);
+}
+.modal-title {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 400;
+  color: #55311c;
+}
+.modal-desc {
+  margin: 6px 0 30px 0;
+}
+.modal-left {
+  padding: 60px 30px 20px;
+  background: #fff;
+  flex: 1.5;
+  transition-duration: 0.5s;
+  transform: translateY(80px);
+  opacity: 0;
+}
+.modal-button {
+  color: #7d695e;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 10px 40px;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.16);
+  transition: 0.3s;
+}
+.modal-button:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+}
+.modal-right {
+  flex: 2;
+  font-size: 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.modal-right img {
+  width: 100%;
+  height: 100%;
+  transform: scale(2);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition-duration: 1.2s;
+}
+.modal.is-open {
+  height: 100%;
+  background: rgba(51, 51, 51, 0.85);
+}
+.modal.is-open .modal-button {
+  opacity: 0;
+}
+.modal.is-open .modal-container {
+  opacity: 1;
+  transition-duration: 0.6s;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+.modal.is-open .modal-right img {
+  transform: scale(1);
+}
+.modal.is-open .modal-left {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-buttons a {
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 14px;
+}
+
+.sign-up {
+  margin: 60px 0 0;
+  font-size: 14px;
+  text-align: center;
+}
+.sign-up a {
+  color: #8c7569;
+}
+
+.input-button {
+  padding: 8px 12px;
+  outline: none;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  background: #8c7569;
+  font-family: "Nunito", sans-serif;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.input-button:hover {
+  background: #55311c;
+}
+
+.input-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  color: #8c7569;
+  transition: 0.3s;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.input-block input {
+  outline: 0;
+  border: 0;
+  padding: 4px 0 0;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+.input-block input::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.input-block input:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.input-block input::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.input-block:focus-within {
+  border-color: #8c7569;
+}
+.input-block:focus-within .input-label {
+  color: rgba(140, 117, 105, 0.8);
+}
+
+.icon-button {
+  outline: 0;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.scroll-down {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #7d695e;
+  font-size: 32px;
+  font-weight: 800;
+  transform: translate(-50%, -50%);
+}
+.scroll-down svg {
+  margin-top: 16px;
+  width: 52px;
+  fill: currentColor;
+}
+
+@media (max-width: 750px) {
+  .modal-container {
+    width: 90%;
+  }
+
+  .modal-right {
+    display: none;
+  }
+}
+    </style> -->
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <div class="peru-nav">
+        <div class="navbar-area fixed-top">
+
+            <div class="mobile-nav">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/peru-logo.png" alt="Peru Logo">
+                </a>
+            </div>
+
+            <div class="main-nav peru-nav-style">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <!-- <img src="" alt="peru Logo"> -->
+                        </a>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link  active">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link ">  Digital Libraries and Information resources</a>
+                                </li>
+                               
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link ">Healthcare and Research Solutions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link ">Educational Technologies and Corporate Solutions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-title-area item-bg-1">
+        <div class="container">
+            <div class="page-title-content">
+                <h2>  Healthcare and Research Solutions</h2>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li> Healthcare and Research Solutions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-area pt-100 pb-70">
+        <div class="container">
+            <div id="Container" class="row">
+                <div class="single-portfolio-item col-lg-4 col-sm-6 1 5 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/1.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 2 3 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/2.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 3 5 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/3.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 4 1 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/4.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 5 2 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/5.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 1 3 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/6.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 3 1 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/7.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover">
+                                <div class="hover-text">
+                                    <div>
+                                        <h4>High Q</h4>
+                                        <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                    </span>
+                                    <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                    <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 1 2 3 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/8.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 1 5 3 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/9.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 1 5 3 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/9.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 1 5 3 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/9.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 1 5 3 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/9.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-portfolio-item col-lg-4 col-sm-6 1 5 3 mix">
+                    <div class="portfolio-inner">
+                        <img class="portfolio-img" src="assets/img/project/9.jpg" alt="portfolio-img">
+                        <div class="portfolio-hover">
+                            <div class="hover-text">
+                                <div>
+                                    <h4>High Q</h4>
+                                    <span>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.
+                                </span>
+                                <!-- <button type="button"  class="default-btn mt-2 w-50 mx-auto" data-toggle="modal" data-target="#exampleModal">Discover More</button> -->
+                                <a class="default-btn mt-2" data-bs-toggle="modal" href="#modal" role="button">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+
+    <section class="footer-top-area pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-widget">
+                        <a href="index.html">
+                            <!-- <img src="assets/img/white-logo.png" alt="White-Logo"> -->
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <ul class="address">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                Riyadh, Kingdom of Saudi Arabia
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <a href="tel:+123(456)123"> +966 1 470 4563</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <a
+                                    href="https://templates.envytheme.com/cdn-cgi/l/email-protection#167e737a7a7956667364633875797b"><span
+                                        class="__cf_email__"
+                                        data-cfemail="442c2128282b04342136316a272b29">[email&#160;protected]</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="single-widget">
+                        <h3>Links</h3>
+                        <ul class="links">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="service.html">Service</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="testimonial.html">Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="single-widget">
+                        <h3>Support</h3>
+                        <ul class="links">
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Submit To Ticket</a>
+                            </li>
+                            <li>
+                                <a href="#">Visit Knowledge Base</a>
+                            </li>
+                            <li>
+                                <a href="#">Refund Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Professional Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Refund Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-widget">
+                        <h3>Instagram</h3>
+                        <ul class="instragram">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/inst/1.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/inst/2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/inst/3.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/inst/4.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/inst/5.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/inst/6.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div>
+                        <p>
+                            Copyright <i class="fa fa-copyright"></i>2021 . Designed By
+                            <a href="https://envytheme.com/" target="_blank">iDev</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <ul class="social-icon">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="go-top">
+        <i class="fa fa-angle-double-up"></i>
+        <i class="fa fa-angle-double-up"></i>
+    </div>
+<div  class="modal fade" id="modal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="column" id="main">
+                <h1>Contact Us</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputName">Name</label>
+                    <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">E-mail </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Phone</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+                  </div>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1">Country</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Country">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">message</label>
+                    <textarea  class="form-control" id="exampleInputPassword1" placeholder="message">
+                  </div>
+                  <button type="submit" class="default-btn mt-2 w-100">Send</button>
+                </form>
+              </div>
+              <div>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="67px" height="578px" viewBox="0 0 67 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  
+                    <title>Path</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-1" stroke="none"  stroke-width="1" fill="#39ae38" fill-rule="evenodd">
+                        <path  style="fill:#1b3777!important;" d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z" id="Path" fill="#F9BC35"></path>
+                    </g>
+                </svg>
+              </div>
+              <div class="column" id="secondary">
+                <div class="sec-content">
+                  <h2>Welcome Back!</h2>
+                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js'></script>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/meanmenu.min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="assets/js/imagelightbox.min.js"></script>
+
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <script src="assets/js/nice-select.min.js"></script>
+
+    <script src="assets/js/form-validator.min.js"></script>
+
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <script src="assets/js/ajaxchimp.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+</body>
+
+<!-- Mirrored from templates.envytheme.com/peru/default/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Apr 2021 17:07:27 GMT -->
+
+</html>
